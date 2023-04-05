@@ -1,13 +1,12 @@
 #include <iostream>
-
+#include <cstring>
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    cout << "hello worls \n";
-    char c = 'K';
+    std::string cadena = "La lluvia en Sevilla es una maravilla";
+    char convert[100];
+    strcpy(convert, cadena.c_str());
 
-    int i = c;
-    cout << i;
     return 0;
 }
